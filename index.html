@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>H5个人页面展示</title>
+	<style type="text/css">
+	* {
+		padding: 0; 
+		margin: 0;
+	} 
+	body{
+		background: #f1f1f1;
+	}
+	.header{
+		width: 100%;
+		height: 39.2px;
+		background-color: #019875;
+		display: flex;
+		justify-content:center;
+	}
+	
+	.xx{
+		width: 70%;
+		height: 39.2px;
+		display: flex;
+		
+	}
+	a{
+		text-decoration: none;
+		color: #fff;
+	}
+	ul li{
+		list-style-type: none;
+		color: #fff;
+		display: flex;
+	}
+	.aa{
+		display: flex;
+		width: 40%;
+		height: 39.2px;
+		
+	
+	}
+	.navbox{
+		display: flex;
+		font-size: 1vw;
+		width: 100%;
+		height: 39.2px;
+		justify-content: space-around;
+    	align-items: center;
+
+	}
+	
+	.wo{
+		width: 100%;
+		height: 400px;
+		background-color: #019875;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		flex-direction:column;
+	}
+	.logo{
+		width: 150px;
+    	height: 150px;
+    	background-image:url(img/wo.jpg);
+    	background-size: cover;
+    	border-radius: 50%;
+    	transform: rotate(0deg);
+  		transition: transform 1s linear;
+	}
+	.logo:hover{
+		transform: rotate(360deg);
+	}
+	.peointr{
+		margin-top: 5px;
+		color: #fff;
+	    font-size: 24px;
+	    font-weight: bold;
+	   
+	}
+	.peointrs{
+		color: #fff;
+	    font-size: 14px;
+	    margin-top: 20px;
+	    font-weight: bold;
+	}
+	.title{
+		width: 70%;
+		margin: 10px auto;
+	    border-bottom: 1px dashed #019875;
+	    padding-bottom: 10px;
+	    font-size: 24px;
+	    font-weight: bold;
+	    padding-left: 20px;
+	    transition: 1s;
+	}
+	.title a{
+		color: #019875;
+	}
+	.content{
+		display: flex;
+		justify-content:center;
+	}
+	.content1{
+		width: 70%;
+		height: 450px;
+		border-radius: 10px;
+		background: #fff;
+		color: #666;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.conten1 header h2{
+		display: block;
+		margin-left: 20px;
+	}
+	.content2{
+		width: 80%;
+		height: 350px;
+
+	}
+	/*.content2{
+		text-align: center;
+	}*/
+	.conten1 .title2{
+		text-align: center;
+	}
+	.title2 p{
+		margin-top: 5px;
+	}
+
+	/*页脚*/
+	.zui{
+		margin-top: 30px;
+		width: 100%;
+		height: 50px;
+		background-color: #f9f9f9;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+
+	}
+	.zui p{
+		font-size: 1vw;
+	}
+
+
+	/*手机端*/
+	@media screen and (max-width: 750px) {
+    .xx{
+		width: 100%;
+		height: 39.2px;
+		display: flex;
+		
+	}
+	.aa{
+		display: flex;
+		width: 85%;
+		height: 39.2px;	
+	}
+	.navbox{
+		display: flex;
+		font-size: 16px;
+		width: 100%;
+		height: 39.2px;
+		justify-content: space-around;
+    	align-items: center;
+	}
+	.title,.content1{
+		width: 90%;
+	}
+}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="header">
+		<div class="xx">
+		<!-- 菜单导航 -->
+			<nav class="aa">
+				<ul class="navbox">
+					<li><a href="#">首页</a></li>
+					<li><a href="#zhuye">个人介绍</a></li>
+					<li><a href="#">图片托管</a></li>
+					<li><a href="https://www.zhihao1.cn/">网站主页</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- 小主页---头像 -->
+	<article class="wo">
+		<span class="logo"></span>
+		<p class="peointr">菜菜的小豪</p>
+		<p class="peointrs">迷失的人迷失了，相逢的人会再相逢，而我永远在等你</p>
+	</article>
+
+	<!-- 内容--个人小介绍 -->
+	<hgroup class="title">
+			<p><a name="zhuye">个人介绍</a></p>
+	</hgroup>
+	<article class="content">
+			<section class="content1">
+				<div class="content2">
+					<hgroup class="title2">
+						<h2>关于小豪</h2>
+						<p>爱生活，爱技术</p>
+						<p>纵使这世间再过繁花似锦，也抵不过你的回眸一笑。</p>	
+					</hgroupr>
+				</div>
+			</section>
+
+	</article>
+    <!-- 页面的页脚 -->
+	<footer class="zui">	
+			<p>网站备案：粤ICP备12077021号-2 版权所有(c)王志毫</p>
+	</footer>
+</body>
+</html>
